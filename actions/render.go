@@ -1,8 +1,8 @@
 package actions
 
 import (
-	"it_goroskop_generator/public"
-	"it_goroskop_generator/templates"
+	"github.com/denisqsound/it_goroskop_generator/public"
+	"github.com/denisqsound/it_goroskop_generator/templates"
 
 	"github.com/gobuffalo/buffalo/render"
 )
@@ -11,21 +11,9 @@ var r *render.Engine
 
 func init() {
 	r = render.New(render.Options{
-		// HTML layout to be used for all HTML requests:
-		HTMLLayout: "application.plush.html",
-
-		// fs.FS containing templates
+		HTMLLayout:  "application.plush.html",
 		TemplatesFS: templates.FS(),
-
-		// fs.FS containing assets
-		AssetsFS: public.FS(),
-
-		// Add template helpers here:
-		Helpers: render.Helpers{
-			// for non-bootstrap form helpers uncomment the lines
-			// below and import "github.com/gobuffalo/helpers/forms"
-			// forms.FormKey:     forms.Form,
-			// forms.FormForKey:  forms.FormFor,
-		},
+		AssetsFS:    public.FS(),
+		Helpers:     render.Helpers{},
 	})
 }

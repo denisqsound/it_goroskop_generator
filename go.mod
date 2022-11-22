@@ -1,6 +1,6 @@
-module it_goroskop_generator
+module github.com/denisqsound/it_goroskop_generator
 
-go 1.19
+go 1.18
 
 require (
 	github.com/gobuffalo/buffalo v1.0.1

@@ -1,7 +1,7 @@
 package grifts
 
 import (
-	"it_goroskop_generator/actions"
+	"github.com/denisqsound/it_goroskop_generator/actions"
 
 	"github.com/gobuffalo/buffalo"
 )

@@ -1,64 +1,193 @@
-<header>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-1 col-sm-2 col-xs-2 logo">
-        <a href="<%= rootPath() %>"><img src="<%= rootPath() %>assets/images/logo.svg" alt=""></a>
-      </div>
-      <div class="col-md-9 col-sm-9 col-xs-10 titles">
-        <h1><%= t("welcome_greeting") %></h1>
-        <h2>
-          <a href="https://github.com/gobuffalo/buffalo"><i class="fab fa-github" aria-hidden="true"></i> https://github.com/gobuffalo/buffalo</a>
-        </h2>
-        <h2 class="documentation">
-          <a href="http://gobuffalo.io/"><i class="fa fa-book" aria-hidden="true"></i> Documentation</a>
-        </h2>
-      </div>
+<head>
+    <title>Заголовок документа</title>
+
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1 col-sm-2 col-xs-2 logo">
+                    <a href="<%= rootPath() %>"><img src="<%= rootPath() %>assets/images/it.png" alt=""></a>
+                </div>
+                <div class="col-md-9 col-sm-9 col-xs-10 titles">
+                    <h1><%= t("welcome_greeting") %></h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="foot"><span> Powered by denisqsound </span></div>
+</head>
+
+<div class="qwe">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+
+                <figure class="sign">
+                    <p><img src="https://img.icons8.com/ios-glyphs/90/null/aries.png" width="90" height="90"></p>
+                    <figcaption> Овен <br> 21 марта - 20 апреля</figcaption>
+                </figure>
+
+                <ul>
+                    <td valign="top"> <%= predictions[0] %>.</td>
+                </ul>
+
+
+                <figure class="sign">
+                    <p><img src="https://img.icons8.com/ios-glyphs/90/null/taurus.png" width="90" height="90"></p>
+                    <figcaption> Телец <br> 21 апреля - 21 мая</figcaption>
+                </figure>
+
+                <ul>
+                    <td valign="top"> <%= predictions[1] %>.</td>
+                </ul>
+
+
+                <figure class="sign">
+                    <p><img src="https://img.icons8.com/ios-glyphs/90/null/gemini.png" width="90" height="90"></p>
+                    <figcaption> Близнецы <br> 21 мая - 20 июня</figcaption>
+                </figure>
+
+                <ul>
+                    <td valign="top"> <%= predictions[2] %>.</td>
+                </ul>
+
+
+                <figure class="sign">
+                    <p><img src="https://img.icons8.com/ios-glyphs/90/null/cancer.png" width="90" height="90"></p>
+                    <figcaption> Рак <br> 21 июня - 22 июля</figcaption>
+                </figure>
+
+                <ul>
+                    <td valign="top"> <%= predictions[3] %>.</td>
+                </ul>
+
+
+                <figure class="sign">
+                    <p><img src="https://img.icons8.com/ios-glyphs/90/null/leo.png" width="90" height="90"></p>
+                    <figcaption> Лев <br> 21 июля - 22 августа</figcaption>
+                </figure>
+
+                <ul>
+                    <td valign="top"> <%= predictions[4] %>.</td>
+                </ul>
+
+
+                <figure class="sign">
+                    <p><img src="https://img.icons8.com/ios-glyphs/90/null/virgo.png" width="90" height="90"></p>
+                    <figcaption> Дева <br> 23 августа - 22 сентября</figcaption>
+                </figure>
+
+                <ul>
+                    <td valign="top"> <%= predictions[5] %>.</td>
+                </ul>
+
+
+                <figure class="sign">
+                    <p><img src="https://img.icons8.com/ios-glyphs/90/null/libra.png" width="90" height="90"></p>
+                    <figcaption> Весы <br> 23 сентября - 22 октября</figcaption>
+                </figure>
+
+                <ul>
+                    <td valign="top"> <%= predictions[6] %>.</td>
+                </ul>
+
+
+                <figure class="sign">
+                    <p><img src="https://img.icons8.com/ios-glyphs/90/null/scorpio.png" width="90" height="90"></p>
+                    <figcaption> Скорпион <br> 23 октября - 21 ноября</figcaption>
+                </figure>
+
+                <ul>
+                    <td valign="top"> <%= predictions[7] %>.</td>
+                </ul>
+
+
+                <figure class="sign">
+                    <p><img src="https://img.icons8.com/ios-glyphs/90/null/sagittarius.png" width="90" height="90"></p>
+                    <figcaption> Стрелец <br> 22 ноября - 21 декабря</figcaption>
+                </figure>
+
+                <ul>
+                    <td valign="top"> <%= predictions[8] %>.</td>
+                </ul>
+
+
+                <figure class="sign">
+                    <p><img src="https://img.icons8.com/ios-glyphs/90/null/capricorn.png" width="90" height="90"></p>
+                    <figcaption> Козерог <br> 22 декабря - 19 января</figcaption>
+                </figure>
+
+                <ul>
+                    <td valign="top"> <%= predictions[9] %>.</td>
+                </ul>
+
+
+                <figure class="sign">
+                    <p><img src="https://img.icons8.com/ios-glyphs/90/null/aquarius.png" width="90" height="90"></p>
+                    <figcaption> Водолей <br> 20 января - 18 февраля</figcaption>
+                </figure>
+
+                <ul>
+                    <td valign="top"> <%= predictions[10] %>.</td>
+                </ul>
+
+
+                <figure class="sign">
+                    <p><img src="https://img.icons8.com/ios-glyphs/90/null/pisces.png" width="90" height="90"></p>
+                    <figcaption> Рыбы <br> 19 февраля - 20 марта</figcaption>
+                </figure>
+
+                <ul>
+                    <td valign="top"> <%= predictions[11] %>.</td>
+                </ul>
+
+
+            </div>
+        </div>
     </div>
-  </div>
 
-</header>
-
-<div class="row">
-  <div class="col-md-12">
-    <div class="subtitle">
-      <div class="container">
-        <h3>Defined Routes</h3>
-      </div>
-    </div>
-    <div class="table-responsive">
-      <table class="table table-striped">
-        <thead>
-          <tr text-align="left">
-            <th class="centered">METHOD</th>
-            <th>PATH</th>
-            <th>NAME</th>
-            <th>HANDLER</th>
-          </tr>
-        </thead>
-        <tbody>
-
-          <%= for (r) in routes { %>
-            <tr>
-              <td class="centered">
-                <%= r.Method %>
-              </td>
-              <td>
-                <%= if (r.Method != "GET" || r.Path ~= "{") { %><%=
-                  r.Path %><%
-                } else { %><%=
-                  linkTo(r.Path, {body: r.Path}) %><%
-                } %>
-              </td>
-              <td>
-                <%= r.PathName %>
-              </td>
-              <td><code><%= r.HandlerName %></code></td>
-            </tr>
-          <% } %>
-
-        </tbody>
-      </table>
-    </div>
-  </div>
 </div>
-<div class="foot"> <span> Powered by <a href="http://gobuffalo.io/">gobuffalo.io</a></span> </div>
+</div>
+</div>
+</div>
+
+
+<body>
+<style>
+    .button {
+        background-color: #1c87c9;
+        -webkit-border-radius: 60px;
+        border-radius: 60px;
+        border: none;
+        color: #eeeeee;
+        cursor: pointer;
+        display: inline-block;
+        font-family: sans-serif;
+        font-size: 20px;
+        padding: 10px 10px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    @keyframes glowing {
+        0% {
+            background-color: #2ba805;
+            box-shadow: 0 0 5px #2ba805;
+        }
+        50% {
+            background-color: #49e819;
+            box-shadow: 0 0 20px #49e819;
+        }
+        100% {
+            background-color: #2ba805;
+            box-shadow: 0 0 5px #2ba805;
+        }
+    }
+
+    .button {
+        animation: glowing 1300ms infinite;
+    }
+</style>
+<form action="money" target="_blank">
+    <button type="submit" class="button">ТАРО: Денежный канал. ЖМИ!</button>
