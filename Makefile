@@ -3,9 +3,6 @@
 .PHONY: dc
 dc: dc-build dc-push
 
-
-#
-
 .PHONY: dc-up
 dc-up:
 	docker rm horoscope ; docker run -d -p 127.0.0.1:3000:3000/tcp --name horoscope denisqsound/it_horoscope:latest
@@ -19,9 +16,9 @@ dc-push:
 	docker push denisqsound/it_horoscope:latest
 
 
-
 .PHONY: dc-clean
-	dc-clean: docker stop horoscope; docker rmi denisqsound/it_horoscope:latest --force
+dc-clean:
+	docker stop horoscope; docker rmi denisqsound/it_horoscope:latest --force
 
 
 .PHONY: dc-upgrade
